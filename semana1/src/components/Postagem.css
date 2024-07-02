@@ -1,0 +1,31 @@
+.post {
+    background-color: bisque;
+    width: 70vw;
+    margin: 0 15vw;
+    margin-bottom: 8vh;
+    border-radius: 15px;
+    padding: 16px;
+}
+
+.blocos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.post h2 {
+    text-align: center;
+    padding-bottom: 8px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.post p {
+    width: 40vw;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.post img {
+    width: 200px;
+}
