@@ -1,0 +1,12 @@
+.produto {
+    margin: 6vh 40vw;
+    border: 6px solid;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.produto valorDesconto {
+    background-color: aqua;
+}

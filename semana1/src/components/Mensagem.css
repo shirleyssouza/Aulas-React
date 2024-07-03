@@ -1,5 +1,6 @@
 .mensagem-titulo {
     color: brown;
+    text-align: center;
 }
 
 .paragrafo {
@@ -12,5 +13,10 @@
     border: 1px solid grey;
     border-radius: 8px;
     width: 300px;
-    margin: 8px auto;
+    margin: auto;
+    margin-bottom: 24px;
+}
+
+img {
+    border-radius: 8px;
 }

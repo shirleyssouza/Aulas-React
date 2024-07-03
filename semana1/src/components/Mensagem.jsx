@@ -1,19 +1,19 @@
 // Importante: importar para que os estilos do arquivo façam parte do projeto
 import "./Mensagem.css"
 
-function Mensagem() {
-    const textoTitulo = "As batatas quando nascem se esparramam pelo chão";
-    const nomeAutor = "J. Almir";
-    const linkImagem = "http://picsum.photos/200";
+// Exercício: Aplicar props ao componente Mensagem, as propriedades são: 
+// textoTitulo, nomeAutor, paragrafo e linkImagem. 
+// Adapte o componente para receber props.
+// Até 12h
 
+function Mensagem(props) {
+ 
     return (
         <section className="mensagem-corpo">
-            <h2 className="mensagem-titulo">{textoTitulo.toUpperCase()}</h2>
-            <img src={linkImagem} alt="Imagem da mensagem" />
-            <p className="paragrafo">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore, pariatur.
-            </p>
-            <small>Criado por: {nomeAutor}</small>
+            <h2 className="mensagem-titulo">{props.textoTitulo}</h2>
+            <img src={props.linkImagem} alt="Imagem da mensagem" />
+            <p className="paragrafo">{props.paragrafo}</p>
+            <small>Criado por: {props.nomeAutor}</small>
         </section>
     );
 }

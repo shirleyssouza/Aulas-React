@@ -3,20 +3,29 @@
 // Declarativa
 // Açucar sintático
 
-import Blog from "./components/Blog"
-import Rodape from "./components/Rodape"
+import Blog from "./components/Blog";
+import Rodape from "./components/Rodape";
+import Navbar from "./components/Navbar";
+import CardAluno from "./components/CardAluno";
+import Produto from "./components/Produto";
 
 // Componente principal da aplicação
 function App() {
     return (
-        <main>
-            <section>
+        <>
+            <main>
+                <Navbar logado={true} nomeUsuario="Shirley" />
                 <Blog />
-            </section>
-            <section>
-                <Rodape />
-            </section>
-        </main>
+                <CardAluno nome="Shirley" serie="Oitava" media="8.0" />
+                <Produto
+                    nome="Playstation 5.0"
+                    preco="2600.00"
+                    desconto={false}
+                    valorDesconto="16"
+                />
+            </main>
+            <Rodape />
+        </>
     );
 }
 

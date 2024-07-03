@@ -1,23 +1,18 @@
 import "./Postagem.css"
 
-function Postagem() {
+function Postagem(props) {
     return (
-        <section className="post">
-            <h2>Aprendendo React</h2>
+        <article className="post">
+            <h2>{props.titulo}</h2>
             <div className="blocos">
             <p>
-                Criado em 2011 pelo Facebook, com a criação de views
-                declarativas e baseando-se em componentes, possuía o intuito de
-                otimizar a atualização e a sincronização de atividades
-                simultâneas no feed de notícias da rede social e melhorar a
-                manutenção de código.
+               {props.desc}
             </p>
             <img
-                src="https://www.svgrepo.com/show/303500/react-1-logo.svg"
-                alt="React logo"
+                src={props.linkImagem} alt={props.descImg}
             />
             </div>
-        </section>
+        </article>
     );
 }
 

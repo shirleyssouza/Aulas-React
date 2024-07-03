@@ -1,0 +1,34 @@
+.aprovado {
+    margin: 6vh 30vw;
+    border: 6px solid aqua;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    line-height: 40px;
+    background-color: blue;
+}
+.aprovado h1, .aprovado h3, .aprovado p {
+    color: aqua;
+}
+.aprovado h2 {
+    color: white;
+    font-size: 40px;
+}
+
+.reprovado {
+    margin: 6vh 30vw;
+    border: 6px solid pink;
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    line-height: 40px;
+    background-color: red;
+}
+.reprovado h1, .reprovado h3, .reprovado p {
+    color: pink;
+}
+.reprovado h2 {
+    color: white;
+    font-size: 40px;
+}
+
