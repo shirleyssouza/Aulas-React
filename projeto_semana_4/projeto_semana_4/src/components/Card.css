@@ -1,0 +1,17 @@
+article h3 {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.box-bottom {
+    display: flex;
+    margin-bottom: 4vh;
+}
+
+.box-bottom p {
+    margin: 4vh 2vw;
+}
+
+.box-bottom img {
+    width: 20vw;
+}

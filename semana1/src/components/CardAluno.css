@@ -1,4 +1,4 @@
-.aprovado {
+.aprovado2 {
     margin: 6vh 30vw;
     border: 6px solid aqua;
     border-radius: 16px;
@@ -7,15 +7,15 @@
     line-height: 40px;
     background-color: blue;
 }
-.aprovado h1, .aprovado h3, .aprovado p {
+.aprovado2 h1, .aprovado2 h3, .aprovado2 p {
     color: aqua;
 }
-.aprovado h2 {
+.aprovado2 h2 {
     color: white;
     font-size: 40px;
 }
 
-.reprovado {
+.reprovado2 {
     margin: 6vh 30vw;
     border: 6px solid pink;
     border-radius: 16px;
@@ -24,10 +24,10 @@
     line-height: 40px;
     background-color: red;
 }
-.reprovado h1, .reprovado h3, .reprovado p {
+.reprovado2 h1, .reprovado2 h3, .reprovado2 p {
     color: pink;
 }
-.reprovado h2 {
+.reprovado2 h2 {
     color: white;
     font-size: 40px;
 }

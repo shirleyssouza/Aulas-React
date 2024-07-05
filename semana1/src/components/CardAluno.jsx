@@ -3,7 +3,7 @@ import "./CardAluno.css";
 function CardAluno(props) {
     if (props.media >= "7.0") {
         return (
-            <section class="aprovado">
+            <section className="aprovado2">
                 <h1>Caro(a) aluno(a), {props.nome}!</h1>
                 <h3>Nocê está cursando a {props.serie} série.</h3>
                 <p>
@@ -15,7 +15,7 @@ function CardAluno(props) {
         );
     } else {
         return (
-            <section class="reprovado">
+            <section className="reprovado2">
                 <h1>Caro(a) aluno(a), {props.nome}!</h1>
                 <h3>Nocê está cursando a {props.serie} série.</h3>
                 <p>

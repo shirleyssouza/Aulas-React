@@ -1,0 +1,26 @@
+Comandos para inicializar um projeto de React:
+
+node - v
+Este comando serve para checar a versão atual do Node, recomendo 16 ou mais.
+
+npm create vite@latest <nome-do-projeto> -- --template react
+Este comando irá gerar a pasta do projeto, troque o <nome-do-projeto> por um nome válido.
+
+cd <nome-do-projeto>
+Abra a pasta do projeto criado para executar os comandos a seguir.
+
+npm install
+Instale as dependências necessárias para o funcionamento do projeto.
+
+npm run dev
+Rode o servidor web de desenvolvimento para testar a aplicação.
+
+**************************************************************
+
+Criar pasta de arquivo react no terminal pelo vite
+npm create vite@latest <nome-do-projeto> -- --template react
+
+Rodar os comandos em tela
+
+Depois apagar os arquivos App.jxs e App.css
+Limpar o arquivo index.css

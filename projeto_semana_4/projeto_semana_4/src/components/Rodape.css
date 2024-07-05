@@ -1,0 +1,39 @@
+footer {
+    display: flex;
+    background-color: #555d2a;
+    margin-top: 8vh;
+    padding: 1.5vw;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40vw;
+    text-align: center;
+    margin-left: 6vw;
+}
+
+.textos p {
+    margin: 0.7vh;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    line-height: 3.5vh;
+    margin-right: 13vw;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: black;
+}
+
+footer nav a:hover {
+    color: #dcd469;
+}
+
+

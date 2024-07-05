@@ -1,0 +1,17 @@
+.banner {
+    margin: 8vh 6vw;
+    background-color: #959646;;
+    padding: 2vh 2vw;
+    border-radius: 16px;
+}
+
+.banner h1 {
+    margin-bottom: 2vh;
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.banner p {
+    padding-bottom: 2vh;
+    font-size: 1.2rem;
+}
