@@ -11,6 +11,13 @@ import Produto from "./components/Produto";
 import Listagem from "./components/Listagem";
 import CardAlunoAula from "./components/CardAlunoAula";
 import Banner from "./components/Banner";
+import Eventos from "./components/Eventos"
+import Contador from "./components/Contador";
+import Abas from "./Abas";
+import Carrossel from "./Carrossel";
+import CalculadoraIMC from "./CalculadoraIMC";
+import Post from "./Post"
+import ConversorTemperatura from "./ConversorTemperatura";
 
 // Componente principal da aplicação
 function App() {
@@ -28,7 +35,15 @@ function App() {
                 />
                 <Listagem />
                 <CardAlunoAula /> */ }
-                <Banner />
+                {/* <Contador valorInicial={20} />
+                <Contador valorInicial={0} />
+                <Contador valorInicial={1000} />
+                <Contador /> */}
+                {/* <Abas /> */}
+                {/* <Carrossel /> */}
+                {/* <CalculadoraIMC /> */}
+                <Post />
+                <ConversorTemperatura />
             </main>
             {/* <Rodape /> */}
         </>
