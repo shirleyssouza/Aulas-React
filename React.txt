@@ -22,5 +22,11 @@ npm create vite@latest <nome-do-projeto> -- --template react
 
 Rodar os comandos em tela
 
+**************************************************************
+
+npm install react-router-dom
+
+Isso permite cirar aplicações com várias páginas
+
 Depois apagar os arquivos App.jxs e App.css
 Limpar o arquivo index.css

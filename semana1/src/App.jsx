@@ -13,11 +13,11 @@ import CardAlunoAula from "./components/CardAlunoAula";
 import Banner from "./components/Banner";
 import Eventos from "./components/Eventos"
 import Contador from "./components/Contador";
-import Abas from "./Abas";
-import Carrossel from "./Carrossel";
-import CalculadoraIMC from "./CalculadoraIMC";
-import Post from "./Post"
-import ConversorTemperatura from "./ConversorTemperatura";
+import Abas from "./components/Abas";
+import Carrossel from "./components/Carrossel";
+import CalculadoraIMC from "./components/CalculadoraIMC";
+import Post from "./components/Post"
+import ConversorTemperatura from "./components/ConversorTemperatura";
 
 // Componente principal da aplicação
 function App() {
