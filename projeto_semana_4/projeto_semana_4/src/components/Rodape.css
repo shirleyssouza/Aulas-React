@@ -5,6 +5,7 @@ footer {
     padding: 1.5vw;
     align-items: center;
     justify-content: space-between;
+   
 }
 
 .textos {
@@ -16,20 +17,23 @@ footer {
     margin-left: 6vw;
 }
 
-.textos p {
-    margin: 0.7vh;
+.textos h4, .textos p {
+    color: #120907;
+    margin-bottom: 1.5vh;
 }
 
 footer nav {
     display: flex;
     flex-direction: column;
-    line-height: 3.5vh;
+    line-height: 3.8vh;
     margin-right: 13vw;
 }
 
 footer nav a {
     text-decoration: none;
-    color: black;
+    color: #120907;
+    font-size: 1.2rem;
+
 }
 
 footer nav a:hover {

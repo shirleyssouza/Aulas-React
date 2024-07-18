@@ -5,6 +5,7 @@ import Cadastro from "./pages/Cadastro";
 import Home from "./pages/Home";
 import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
+import NovaTarefa from "./pages/NovaTarefa";
 import PoliticasDePrivacidade from "./pages/PoliticasDePrivacidade";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -18,12 +19,16 @@ function App() {
             <BrowserRouter>
                 <Menu />
                 <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route path="/login" element={<Login />} />
-                  <Route path="/cadastro" element={<Cadastro />} />
-                  <Route path="/ajuda" element={<Ajuda />} />
-                  <Route path="*" element={<NotFound />} />
-                  <Route path="/p-privacidade" element={<PoliticasDePrivacidade/>} />
+                    <Route path="/" element={<Home />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/cadastro" element={<Cadastro />} />
+                    <Route path="/ajuda" element={<Ajuda />} />
+                    <Route
+                        path="/p-privacidade"
+                        element={<PoliticasDePrivacidade />}
+                    />
+                    <Route path="/novatarefa" element={<NovaTarefa />} />
+                    <Route path="*" element={<NotFound />} />
                 </Routes>
                 <Rodape />
             </BrowserRouter>

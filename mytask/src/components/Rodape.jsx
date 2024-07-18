@@ -1,9 +1,9 @@
-import { Container, Navbar, NavLink, Nav } from "react-bootstrap";
+import { Navbar, NavLink, Nav } from "react-bootstrap";
 
 function Rodape() {
     return (
-        <footer>
-        <Navbar className="ps-2 pe-2" bg="dark" variant="dark" expand="md" fluid>
+        <footer className="mt-auto" fixed="bottom">
+        <Navbar className="ps-2 pe-2" bg="dark" variant="dark" expand="md">
             <Nav>
             <NavLink href="/p-privacidade">Políticas de Privacidade</NavLink>
             </Nav>

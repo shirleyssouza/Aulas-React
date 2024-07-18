@@ -30,3 +30,8 @@ Isso permite cirar aplicações com várias páginas
 
 Depois apagar os arquivos App.jxs e App.css
 Limpar o arquivo index.css
+
+
+npm install react-router-dom
+npm install react-hook-form
+npm install react-bootstrap bootstrap

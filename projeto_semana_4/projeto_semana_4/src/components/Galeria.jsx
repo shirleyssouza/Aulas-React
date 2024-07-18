@@ -3,7 +3,7 @@ import Card from "./Card"
 
 function Galeria() {
     return (
-        <section>
+        <section className="section">
             <h2>Principais Museus</h2>
             <hr />
             <Card />

@@ -1,11 +1,11 @@
-section {
+.section {
     margin: 6vh 6vw;
     background-color: #959646;;
     padding: 2vh 2vw;
     border-radius: 16px;
 }
 
-section h2 {
+.section h2 {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 2vh;
@@ -15,5 +15,5 @@ hr {
     margin-bottom: 4vh;
     background-color: #dcd469;
     border-color: #dcd469;
-    height: 0.5vh
+    height: 0.6vh
 }
