@@ -32,6 +32,26 @@ Depois apagar os arquivos App.jxs e App.css
 Limpar o arquivo index.css
 
 
+********************************************************************
+
+Comandos de instalação:
+
+Rotas:
+
 npm install react-router-dom
+
+Formulários:
+
 npm install react-hook-form
+
+Bootstrap:
+
 npm install react-bootstrap bootstrap
+
+Google firebase:
+
+npm install firebase
+
+Alertas automáticos
+
+npm install react-hot-toast
