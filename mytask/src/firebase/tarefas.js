@@ -10,7 +10,9 @@ import {
     doc,
     getDoc,
     getDocs,
+    query,
     updateDoc,
+    where,
 } from "firebase/firestore";
 import { db } from "./config";
 
@@ -24,12 +26,26 @@ export async function addTarefa(data) {
     // await é uma instrução para esperar o resultado de addDoc.
 }
 
-export async function getTarefas() {
+/*export async function getTarefas() {
     // Snapshot é o resultado da busca na coleção de tarefas
     const snapshot = await getDocs(tarefasCol);
     const tarefas = [];
 
     //Percorremos cada documento da coleção e inserimos no array de tarefas
+    snapshot.forEach((doc) => {
+        tarefas.push({ ...doc.data(), id: doc.id });
+    });
+
+    return tarefas;
+} */
+
+export async function getTarefasUsuario(idUsuario) {
+    // Filtrar tarefas da coleção de acordo com o id do usuário
+    const filtro = query(tarefasCol, where("idUsuario", "==", idUsuario));
+
+    const snapshot = await getDocs(filtro);
+    const tarefas = [];
+
     snapshot.forEach((doc) => {
         tarefas.push({ ...doc.data(), id: doc.id });
     });

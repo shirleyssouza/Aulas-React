@@ -1,19 +1,23 @@
 import { Badge, Button, Card, Container } from "react-bootstrap";
-import { Link, useNavigate } from "react-router-dom";
-import { getTarefas, deleteTarefa } from "../firebase/tarefas";
-import { useEffect, useState } from "react";
+import { Link, Navigate, useNavigate } from "react-router-dom";
+import { getTarefasUsuario, deleteTarefa } from "../firebase/tarefas";
+import { useContext, useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import toast from "react-hot-toast";
+import { UsuarioContext } from "../contexts/UsuarioContext";
 
 function Tarefas() {
     const [tarefas, setTarefas] = useState(null);
     const navigate = useNavigate();
+    const usuario = useContext(UsuarioContext);
 
     function carregarDados() {
         // O then devolve a lista de tarefas da coleção
-        getTarefas().then((resultados) => {
-            setTarefas(resultados);
-        });
+        if (usuario) {
+            getTarefasUsuario(usuario.uid).then((resultados) => {
+                setTarefas(resultados);
+            });
+        }
     }
 
     function deletarTarefa(id) {
@@ -32,6 +36,12 @@ function Tarefas() {
     useEffect(() => {
         carregarDados();
     }, []);
+
+    // Se o usuário não está logado
+    if (usuario == null) {
+        // Navegar para outra página
+        return <Navigate to="/login" />;
+    }
 
     return (
         <main>
